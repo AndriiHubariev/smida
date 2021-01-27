@@ -1,4 +1,5 @@
 @import "../../shared/styles/mixins.scss";
+@import '../../shared/styles/variables.scss';
 
 .header {
   position: fixed;
@@ -7,9 +8,9 @@
   right: 0;
   height: 70px;
   @include flex-justify-between;
-  background-color: rgb(24, 64, 107);
+  background-color: $color-blue;
   color: white;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px 10px 20px;
   box-shadow: 0 0 3px 0 black;
 }
 .header_logo {
