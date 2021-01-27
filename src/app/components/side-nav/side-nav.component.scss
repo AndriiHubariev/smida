@@ -1,0 +1,30 @@
+@import '../../shared/styles/variables.scss';
+@import '../../shared/styles/mixins.scss';
+
+aside {
+  padding-top: 100px;
+  width: 70px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  transition: width .3s ease-in-out;
+  .icons {
+    @include flex-align-center;
+    flex-direction: column;
+    gap: 20px;
+    mat-icon {
+      cursor: pointer;
+    }
+    mat-icon:first-child {
+      padding: 5px;
+      border-radius: 50%;
+      background-color: $color-blue;
+      color: white;
+    }
+  }
+}
+
+.fullSize {
+  white-space: nowrap;
+  width: 200px;
+}
