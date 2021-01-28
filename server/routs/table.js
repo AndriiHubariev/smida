@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const router = Router();
-const data = require("../test_data.json");
+const data = require("../../test_data.json");
 let testData = [...data];
 
 router.get("/", (req, res) => {
