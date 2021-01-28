@@ -3,15 +3,13 @@
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 70px;
   @include flex-justify-between;
   background-color: $color-blue;
   color: white;
   padding: 10px 30px 10px 20px;
   box-shadow: 0 0 3px 0 black;
+  z-index: 3;
 }
 .header_logo {
   @include flex-align-center;

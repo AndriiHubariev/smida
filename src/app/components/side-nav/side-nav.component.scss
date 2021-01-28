@@ -2,12 +2,11 @@
 @import '../../shared/styles/mixins.scss';
 
 aside {
-  padding-top: 100px;
+  position: fixed;
+  padding-top: 45px;
   width: 70px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  transition: width .3s ease-in-out;
+  min-height: 100vh;
+  background-color: white;
   .icons {
     @include flex-align-center;
     flex-direction: column;
@@ -16,15 +15,7 @@ aside {
       cursor: pointer;
     }
     mat-icon:first-child {
-      padding: 5px;
-      border-radius: 50%;
-      background-color: $color-blue;
-      color: white;
+      @include icon-with-background;
     }
   }
-}
-
-.fullSize {
-  white-space: nowrap;
-  width: 200px;
 }
