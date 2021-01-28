@@ -7,9 +7,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SideNavComponent],
+  declarations: [AppComponent, HeaderComponent, SideNavComponent, TableComponent],
   imports: [BrowserModule, HttpClientModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent],
