@@ -8,9 +8,7 @@ import { UniqueFilterOptionsInterface } from '../models/uniqueFilterOptions.inte
 export class FilterUniqueService {
   constructor() {}
 
-  getUniqueOptions(
-    data: ApiResponseInterface[]
-  ): UniqueFilterOptionsInterface {
+  getUniqueOptions(data: ApiResponseInterface[]): UniqueFilterOptionsInterface {
     const uniqueValues: UniqueFilterOptionsInterface = {
       publicationType: [],
       termType: [],

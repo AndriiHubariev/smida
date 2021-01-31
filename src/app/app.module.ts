@@ -9,7 +9,7 @@ import { MaterialModule } from './modules/material/material.module';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TableComponent } from './components/table/table.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TableFilterPipe } from './shared/pipes/table-filter.pipe';
+import { TableFilterPipe } from './pipes/table-filter.pipe';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 @NgModule({
