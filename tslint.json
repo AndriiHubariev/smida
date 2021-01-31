@@ -4,6 +4,8 @@
     "codelyzer"
   ],
   "rules": {
+    "prefer-const": false,
+    "forin": false,
     "align": {
       "options": [
         "parameters",

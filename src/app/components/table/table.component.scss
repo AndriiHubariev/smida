@@ -1,8 +1,8 @@
-@import '../../shared/styles/mixins.scss';
-@import '../../shared/styles/variables.scss';
+@import "../../shared/styles/mixins.scss";
+@import "../../shared/styles/variables.scss";
 
 .table-wrapper {
-  background-color: rgb(255, 255, 255, .4);
+  background-color: rgb(255, 255, 255, 0.4);
   margin: 30px 30px 0 110px;
   padding: 15px;
   .table_info {
@@ -19,13 +19,70 @@
       letter-spacing: 0.5px;
     }
     span {
-      font-size: .7rem;
+      font-size: 0.7rem;
       font-weight: 500;
       letter-spacing: 0.5px;
       color: $color-blue-text;
     }
   }
-  table {
+}
+
+.table-responsive {
+  color: $color-blue-text;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  .mat-table {
     width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    display: table;
+    border-collapse: collapse;
+    margin: 0px;
+    mat-label {
+      color: $color-blue-text;
+      font-weight: 600;
+    }
   }
+  .mat-row,
+  .mat-header-row {
+    display: table-row;
+  }
+  .mat-cell,
+  .mat-header-cell {
+    word-wrap: initial;
+    display: table-cell;
+    padding: 0px 20px;
+    line-break: unset;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .mat_fileType {
+    max-width: 100px;
+  }
+  .mat_term {
+    max-width: 120px;
+  }
+  .resetBtn {
+    width: 100px;
+    margin-left: 30px;
+    text-transform: uppercase;
+  }
+  .deleteBtn {
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.3s linear;
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-infix {
+  padding: 5px;
+}
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {
+  padding: 9px;
 }
